@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Soyo | Gallery</title>
+    <title>Nagasaki Soyo | Gallery</title>
     <script>
         tailwind.config = {
             darkMode: false, 
@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
     <style>
-        body { margin: 0; overflow-x: hidden; background-color: #FEFEFE !important; font-family: 'Inter', 'Noto Sans SC', sans-serif; }
+        body { margin: 0; overflow-x: hidden; background-color: #FEFEFE; font-family: 'Inter', 'Noto Sans SC', sans-serif; }
         ::-webkit-scrollbar { width: 0; }
         .font-script { font-family: 'Dancing Script', cursive; }
         .font-jp { font-family: 'Noto Serif JP', serif; }
@@ -98,15 +98,17 @@
     </div>
     <div id="smooth-wrapper">
         <div id="smooth-content">
-            <section class="h-screen w-full flex items-center justify-center relative z-10 bg-[#FEFEFE]">
-                <div class="absolute top-8 left-8 z-20">
-                    <img src="https://cdn.kedao.ggss.club/2026-1-24-16-35-29-image-file.png" class="logo-img" alt="MyGO!!!!! Logo">
-                </div>
-                <div class="w-[400px] max-w-[80%] aspect-square relative">
-                    <img src="https://cdn.kedao.ggss.club/2026-1-24-15-19-0-c5ca4e70503c4c7ca87d496cb13d09ff-file.png" class="w-full h-full object-contain" alt="Intro Image">
-                </div>
-                <div class="absolute bottom-10 text-slate-300 text-xs tracking-widest animate-bounce">SCROLL TO START</div>
-            </section>
+            <section class="h-screen w-full flex items-center justify-center relative z-10" 
+         style="background-color: #FFFFFF !important;"
+         id="first-page">
+    <div class="absolute top-8 left-8 z-20">
+        <img src="https://cdn.kedao.ggss.club/2026-1-24-16-35-29-image-file.png" class="logo-img" alt="MyGO!!!!! Logo">
+    </div>
+    <div class="w-[400px] max-w-[80%] aspect-square relative">
+        <img src="https://cdn.kedao.ggss.club/2026-1-24-15-19-0-c5ca4e70503c4c7ca87d496cb13d09ff-file.png" class="w-full h-full object-contain" alt="Intro Image">
+    </div>
+    <div class="absolute bottom-10 text-slate-300 text-xs tracking-widest animate-bounce">SCROLL TO START</div>
+</section>
             <section id="animation-stage" class="h-screen w-full relative overflow-hidden bg-[#1a0b2e] z-30">
                 <div class="absolute inset-0 bg-gradient-to-br from-[#2d1b4e] via-[#1a0b2e] to-[#0f0518]"></div>
                 <div class="anim-layer" id="anim-container">
