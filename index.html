@@ -201,9 +201,9 @@
         function shootArrow() {
             const line = document.createElement('div');
             line.classList.add('arrow-line');
-            const width = Math.random() * 150 + 80; 
-            const startX = Math.random() * 60 + 40; 
-            const startY = Math.random() * 60 - 20; 
+            const width = Math.random() * 200 + 100; 
+            const startX = Math.random() * 80 + 10; 
+            const startY = Math.random() * 80 - 40; 
             const angle = 135 + (Math.random() * 10 - 5); 
             line.style.width = `${width}px`;
             line.style.left = `${startX}%`;
@@ -212,7 +212,7 @@
             linesContainer.appendChild(line);
             gsap.fromTo(line, 
                 { x: 0, opacity: 0, scaleX: 0.2 },
-                { x: -1500, y: 1500, opacity: 0, scaleX: 1, duration: Math.random() * 1.2 + 0.8, ease: "power1.in", onComplete: () => line.remove(), keyframes: [{ opacity: 0, percent: 0 }, { opacity: 0.8, percent: 10 }, { opacity: 0, percent: 100 }] }
+                { x: -2000, y: 2000, opacity: 0, scaleX: 1, duration: Math.random() * 2.0 + 1.5, ease: "power1.in", onComplete: () => line.remove(), keyframes: [{ opacity: 0, percent: 0 }, { opacity: 0.8, percent: 10 }, { opacity: 0, percent: 100 }] }
             );
             setTimeout(shootArrow, Math.random() * 300 + 100); 
         }
